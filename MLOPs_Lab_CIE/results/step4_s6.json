@@ -1,7 +1,7 @@
 {
- "registered_model_name": "cloudpulse-response-time-ms-predictor",
- "version": 1,
- "run_id": "ed73113b6bc24728a6df843467fad983",
- "source_metric": "rmse",
- "source_metric_value": 23.56
+    "registered_model_name": "cloudpulse-response-time-ms-predictor",
+    "version": 2,
+    "run_id": "77ec716c2a064c1a9db861ea75c09a55",
+    "source_metric": "rmse",
+    "source_metric_value": 23.5664786309107
 }

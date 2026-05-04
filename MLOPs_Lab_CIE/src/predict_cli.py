@@ -1,6 +1,11 @@
 import argparse
+from pathlib import Path
+
 import joblib
-import numpy as np
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parents[1]
+MODEL_PATH = BASE_DIR / "models" / "model.pkl"
 
 parser = argparse.ArgumentParser()
 
@@ -11,18 +16,19 @@ parser.add_argument("--region_latency", type=float, required=True)
 
 args = parser.parse_args()
 
-# Load model
-model = joblib.load("models/model.pkl")
+model = joblib.load(MODEL_PATH)
 
-# Prepare input
-data = np.array([[ 
-    args.request_size_kb,
-    args.server_load,
-    args.is_cached,
-    args.region_latency
-]])
+data = pd.DataFrame(
+    [
+        {
+            "request_size_kb": args.request_size_kb,
+            "server_load": args.server_load,
+            "is_cached": args.is_cached,
+            "region_latency": args.region_latency,
+        }
+    ]
+)
 
-# Predict
 prediction = model.predict(data)[0]
 
 print(prediction)

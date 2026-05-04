@@ -5,9 +5,11 @@
     "best_params": {
         "n_estimators": 50,
         "max_depth": 3,
-        "learning_rate": 0.1
+        "learning_rate": 0.05
     },
-    "best_mae": 44.07792227750308,
-    "best_cv_mae": 81.7523900857499,
+    "best_mae": 53.05538061205211,
+    "best_cv_mae": 68.90071726243572,
+    "best_rmse": 67.79794757278022,
+    "best_cv_rmse": 78.83160381947918,
     "parent_run_name": "tuning-cloudpulse"
 }
