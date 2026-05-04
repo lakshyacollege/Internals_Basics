@@ -1,0 +1,12 @@
+{
+ "image_name": "cloudpulse-predictor",
+ "image_tag": "v1",
+ "base_image": "python:3.10-slim",
+ "test_input": {
+  "request_size_kb": 297.3,
+  "server_load": 0.6,
+  "is_cached": 0,
+  "region_latency": 94
+ },
+ "prediction": 208.16600351579865
+}

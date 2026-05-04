@@ -1,0 +1,13 @@
+{
+    "search_type": "random",
+    "n_folds": 3,
+    "total_trials": 5,
+    "best_params": {
+        "n_estimators": 50,
+        "max_depth": 3,
+        "learning_rate": 0.1
+    },
+    "best_mae": 44.07792227750308,
+    "best_cv_mae": 81.7523900857499,
+    "parent_run_name": "tuning-cloudpulse"
+}
